@@ -1,0 +1,50 @@
+<!-- include header -->
+<%- include('include/_header')%>
+<!-- /include header -->
+
+<!-- Main Site -->
+<main id="main-site">
+    <div class="container">
+        <div class="box-create-user">
+            <a href="/" class="border-shadow">
+                <span class="text-main"> Back to All Users </span>
+            </a>
+        </div>
+    <div>
+        <h3 class="create-user-text">
+            Update User Form 
+        </h2>
+    </div>
+    <form method='POST' id="add-user">
+        <div class="new-user">
+            <div class="group">
+                <label for='name'>Name</label>
+                
+                <input class ="name-email"type="text" name='name' placeholder="Full Name">
+            </div>
+            <div class="group">
+                <label for='email'>Email</label>
+                <input class ="name-email" type="text" name='email' placeholder="example@gmail.com">
+            </div>
+            <label>Status</label>
+            <div class="radio">
+                <input type="radio" name="status" value="inactive">
+                <label>Active</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="status" value="active">
+                <label>Inactive</label>
+            </div>
+            <div >
+                
+                <button class="button" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer')%>
+<!-- /include footer -->
