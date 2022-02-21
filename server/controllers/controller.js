@@ -15,7 +15,8 @@ exports.create = async (req, res) => {
 
     user.save().then(data => {
         res.send(200).json({
-            message: "User added"
+            message: "User added",
+            data: user
         })
     })
 }
