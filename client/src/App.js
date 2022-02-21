@@ -7,17 +7,17 @@ function App() {
             <header className='App-header'>
                 Application
             </header>
-            <div class="container">
+            <div className="container">
 
-                <div class="box-justify-between">
-                    <a href="/add-user" class="border-shadow">
-                        <span class="text-main"> New User </span>
+                <div className="box-justify-between">
+                    <a href="/add-user" className="border-shadow">
+                        <span className="text-main"> New User </span>
                     </a>
                 </div>
 
                 <form action='/' method='POST'>
                     <table >
-                        <thead class="thead">
+                        <thead className="thead">
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th> 
@@ -29,15 +29,36 @@ function App() {
                     </table> 
                 </form> 
 
-                <a href="/add-user" class="border-shadow">
+                <a href="/add-user" className="border-shadow">
                     <span class="text-main"> Update </span>
                 </a>
 
                 
-                <a href="/add-user" class="border-shadow">
+                <a href="/add-user" className="border-shadow">
                     <span class="text-main"> Delete </span>
                 </a>
             </div>
+            <form method='POST' id="add-user">
+                <div className="new-user">
+                    <div className="group">
+                        <label for='name'>Name</label>
+                        <input className ="name-email"type="text" name='name' placeholder="Full Name"/>
+                    </div>
+                    <div class="group">
+                        <label for='email'>Email</label>
+                        <input class ="name-email" type="text" name='email' placeholder="example@gmail.com"/>
+                    </div>
+                    <label>Status</label>
+                        <div class="radio">
+                            <input type="radio" name="status" value="inactive"/>
+                            <label>Active</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="status" value="active"/>
+                            <label>Inactive</label>
+                        </div>
+                </div>
+            </form>
         </div>   
     )
 }
