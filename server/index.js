@@ -2,10 +2,13 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 const User = require('./models/UserModel')
+const routes = require('')
 
 mongoose.connect("mongodb+srv://newuser:Auto123!@cluster0.4we5r.mongodb.net/user-database?retryWrites=true&w=majority", {
     useNewUrlParser: true
 })
+
+app.use('/', routes)
 
 app.get('/', async (req, res) => {
     const user = new User({
