@@ -1,38 +1,137 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+	font-family: "Monaco", Helvetica, monospace;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+	text-decoration: none;
+	font-family: "Monaco", Helvetica, monospace;
+	color: black;
+}
+
+a :hover {
+	color: coral;
+}
+
+header {
+	border-radius: 5px;
+	margin: 50px;
+	background-color: #1a1b22;
+	padding: 5px;
+	color: whitesmoke;
+}
+header:hover {
+	background-color: rgb(31, 28, 28);
+	transition: ease-in-out 200ms;
+}
+.head-container {
+	margin: 30px auto;
+	justify-content: center;
+	font-weight: 800;
+	font-size: larger;
+	width: max-content;
+}
+
+.head-text {
+	color: whitesmoke;
+}
+table {
+	border-spacing: 0ch;
+	width: 100%;
+}
+
+table td,
+table th {
+	vertical-align: top;
+	padding: 0.75em;
+	text-align: center;
+	border: 1px solid #191b1a;
+}
+
+.thead {
+	background-color: #1a1b22;
+	color: azure;
+}
+
+.box-justify-between {
+	width: 100px;
+	margin: 20px;
+	box-shadow: 6px 6px 2px 1px rgba(137, 137, 187, 0.2);
+	border: #2b2d42 1px solid;
+	padding: auto;
+	text-align: center;
+}
+
+.box-justify-between:hover {
+	transform: translateY(-3px);
+	transition: ease-in-out 200ms;
+}
+
+.create-user-text {
+	text-align: center;
+}
+
+.box-create-user {
+	margin-right: 20px;
+	border: #191b1a 0.5px solid;
+	width: fit-content;
+	position: absolute;
+	right: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.new-user {
+	text-align: left;
+	justify-items: center;
+	max-width: 300px;
+	margin: auto;
+}
+
+.group {
+	margin: 10px;
+	padding: 10px;
+}
+
+.name-email {
+	border: #424242 1px solid;
+	height: 30px;
+	width: 100%;
+	padding-left: 4px;
+	border-radius: 2px;
+	margin-top: 5px;
+}
+
+.radio {
+	position: relative;
+}
+
+.button {
+	width: 300px;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.nav-brand-text-dark {
+	color: aliceblue;
+}
+.nav-brand-text-dark:hover {
+	color: coral;
+}
+.text-container-nav {
+	text-align: center;
 }
