@@ -5,7 +5,7 @@ const User = require('./models/UserModel')
 const routes = require('./routes/routes')
 
 mongoose.connect("mongodb+srv://newuser:Auto123!@cluster0.4we5r.mongodb.net/user-database?retryWrites=true&w=majority", {
-    useNewUrlParser: true
+    useNewUrlParser: true 
 })
 
 
@@ -23,7 +23,7 @@ app.get('/', async (req, res) => {
     }
 })
 
-app.use('/', routes)
+// app.use('/', routes)
 app.listen(3001, () => {
     console.log('Server running!')
 })
