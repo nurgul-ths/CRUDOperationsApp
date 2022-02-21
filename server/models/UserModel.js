@@ -12,4 +12,4 @@ const UsersSchema = new mongoose.Schema({
 })
 
 const SingleUser = mongoose.model("User", UsersSchema)
-module.exports(SingleUser)
+module.exports = SingleUser
