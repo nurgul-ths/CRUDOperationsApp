@@ -1,2 +1,3 @@
 # CRUDOperationsApp
-CRUD application with NodeJS, MongoDB, Express
+
+CRUD application with MERN Stack: NodeJS, MongoDB, Express and React
