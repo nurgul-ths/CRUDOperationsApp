@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const User = require('./models/UserModel')
 const routes = require('./routes/routes')
 
+app.use(express.json())
 mongoose.connect("mongodb+srv://newuser:Auto123!@cluster0.4we5r.mongodb.net/user-database?retryWrites=true&w=majority", {
     useNewUrlParser: true 
 })

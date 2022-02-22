@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 
 function App() {
+
+    const [user, setUser] = useState("")
+    const [age, setAge] = useState(0)
+    const [email, setEmail] = useState("")
+    const [status, setStatus] = useState("")
+
     return (
         <div className='App'>
             <header className='App-header'>
-                Users
+                Students
             </header>
             <div className="container">
 
@@ -19,9 +25,9 @@ function App() {
                     <table >
                         <thead className="thead">
                             <tr>
-                                <th>ID</th>
+                               
                                 <th>Name</th> 
-                                
+                                <th>Age</th>
                                 <th>Email</th>
                                 <th>Action</th>
                             </tr>
