@@ -1,16 +1,40 @@
 .App {
 	text-align: center;
 }
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #b5d5d4, #c2b9c8);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+table {
+	box-shadow: 0 10px 10px rgba(187, 183, 183, 0.2);
+}
+th {
+	background-color: rgba(27, 26, 26, 0.2);
+}
+td {
+	padding: 15px;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: rgb(10, 9, 9);
+}
+
+td:hover {
+	background-color: rgba(199, 185, 185, 0.3);
+}
 
 .App-header {
-	background-color: #282c34;
-	min-height: 100vh;
+	background-color: #0e0e0f;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
 	color: white;
+	padding: 10px;
+	width: 20%;
+	margin: auto;
+	margin-top: 20px;
 }
 
 * {
@@ -24,20 +48,9 @@ a {
 }
 
 a :hover {
-	color: coral;
+	color: rgb(241, 238, 237);
 }
 
-header {
-	border-radius: 5px;
-	margin: 50px;
-	background-color: #1a1b22;
-	padding: 5px;
-	color: whitesmoke;
-}
-header:hover {
-	background-color: rgb(31, 28, 28);
-	transition: ease-in-out 200ms;
-}
 .head-container {
 	margin: 30px auto;
 	justify-content: center;
@@ -130,7 +143,7 @@ table th {
 	color: aliceblue;
 }
 .nav-brand-text-dark:hover {
-	color: coral;
+	color: rgb(247, 240, 238);
 }
 .text-container-nav {
 	text-align: center;

@@ -5,7 +5,7 @@ function App() {
     return (
         <div className='App'>
             <header className='App-header'>
-                Application
+                Users
             </header>
             <div className="container">
 
@@ -21,22 +21,51 @@ function App() {
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th> 
-                                <th>Status</th>
+                                
                                 <th>Email</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
+
+                        <tbody>
+                            
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                
+                            </tr>
+    </tbody>
                     </table> 
                 </form> 
 
-                <a href="/add-user" className="border-shadow">
-                    <span class="text-main"> Update </span>
-                </a>
+                <div className="box-justify-between">
+                    <a href="/add-user" className="border-shadow">
+                        <span className="text-main"> Update </span>
+                    </a>
+                </div>
 
                 
-                <a href="/add-user" className="border-shadow">
-                    <span class="text-main"> Delete </span>
-                </a>
+                <div className="box-justify-between">
+                    <a href="/add-user" className="border-shadow">
+                        <span className="text-main"> Delete </span>
+                    </a>
+                </div>
             </div>
             <form method='POST' id="add-user">
                 <div className="new-user">
@@ -47,6 +76,10 @@ function App() {
                     <div class="group">
                         <label for='email'>Email</label>
                         <input class ="name-email" type="text" name='email' placeholder="example@gmail.com"/>
+                    </div>
+                    <div class="group">
+                        <label for='email'>Age</label>
+                        <input class ="name-email" type="number" name='age' placeholder="Age"/>
                     </div>
                     <label>Status</label>
                         <div class="radio">
