@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import './App.css'
 import Axios from 'axios'
 import Form from './Form'
-import New from './New'
+
 
 function App() {
 
@@ -10,13 +10,6 @@ function App() {
     const [age, setAge] = useState(0)
     const [email, setEmail] = useState("")
     const [status, setStatus] = useState("")
-
-    const [users, setUsers] = useState([])
-    useEffect(() => {
-        Axios.get('http://localhost:3001/read').then((response) => {
-            setUsers(response.data)
-        })
-    }, [])
 
     const handleChange = e => {
         const target = e.target
@@ -37,7 +30,7 @@ function App() {
     return (
         <div className='App'>
             <header className='App-header'>
-                Students
+                Students Data
             </header>
             <div className="container">
 
@@ -48,6 +41,7 @@ function App() {
             
             </div>
                 <div className="new-user">
+                    <form>
                     <div className="group">
                         <label>Name</label>
                         <input className ="name-email" onChange={(event)=>{setName(event.target.value)}} type="text" name='name' placeholder="Full Name"/>
@@ -60,25 +54,29 @@ function App() {
                         <label>Age</label>
                         <input className ="name-email" onChange={(event)=>{setAge(event.target.value)}} type="number" name='age' placeholder="Age"/>
                     </div>
-                    <label>Level</label>
+                    
+                    <label className="level">Level</label>
                         <div class="radio">
-                            <input type="radio"  onChange={handleChange} name="status" value="beginner"/>
+                            <input type="radio"  onChange={handleChange} name="status" value="Beginner"/>
                             <label>Beginner</label>
                         </div>
                         <div class="radio">
-                            <input type="radio"  onChange={handleChange} name="status" value="intermediate"/>
+                            <input type="radio"  onChange={handleChange} name="status" value="Intermediate"/>
                             <label>Intermediate</label>
                         </div>
                         <div class="radio">
-                            <input type="radio"  onChange={handleChange} name="status" value="advanced"/>
+                            <input type="radio"  onChange={handleChange} name="status" value="Advanced"/>
                             <label>Advanced</label>
                         </div>
                     <div className="box-justify-between">
                         <button onClick={addToList}>
-                            Create New User
+                            Create New User 
                         </button>
-                        
+
+                         
                     </div>
+                    </form>  
+                    <br/>
                 </div>
             
         </div>   

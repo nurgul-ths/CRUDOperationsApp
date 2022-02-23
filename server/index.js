@@ -43,6 +43,28 @@ app.get('/read', async (req, res) => {
     })
 })
 
+app.put('/update', async (req, res) => {
+    const id = req.body.id
+    const newName = req.body.newName
+    const newStatus = req.body.newStatus
+
+    try{
+        await User.findById(id, (err, upd) => {
+            upd.name = newName
+            upd.status = newStatus
+            upd.save()
+            res.send('Update data')
+        })
+    } catch(err) {
+        console.log(err)
+    }
+})
+
+app.delete('/delete/:id', async (req, res) => {
+    await User.findByIdAndRemove(req.params.id).exec()
+    res.send("Delete")
+})
+
 // app.use('/', routes)
 app.listen(3001, () => {
     console.log('Server running!')

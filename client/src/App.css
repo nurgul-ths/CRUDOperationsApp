@@ -3,7 +3,12 @@
 }
 body {
 	margin: 0;
-	background: linear-gradient(45deg, #b5d5d4, #c2b9c8);
+	background: rgb(213, 153, 201);
+	background: linear-gradient(
+		90deg,
+		rgba(213, 153, 201, 1) 0%,
+		rgba(87, 141, 195, 1) 100%
+	);
 	font-family: Arial;
 	font-weight: 100;
 }
@@ -24,17 +29,20 @@ td:hover {
 }
 
 .App-header {
-	background-color: #0e0e0f;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
-	color: white;
-	padding: 10px;
+	color: rgb(0, 0, 0);
+	padding-top: 10px;
+	padding-bottom: 3px;
+	margin-bottom: 20px;
 	width: 20%;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 20px;
+	border-bottom: #0e0e0f 1px solid;
 }
 
 * {
@@ -81,25 +89,25 @@ table th {
 	color: azure;
 }
 
-.box-justify-between {
+/* .box-justify-between {
 	width: 100px;
 	margin: 20px;
 	box-shadow: 6px 6px 2px 1px rgba(137, 137, 187, 0.2);
 	border: #2b2d42 1px solid;
 	padding: auto;
 	text-align: center;
-}
+} */
 
-.box-justify-between:hover {
+/* .box-justify-between:hover {
 	transform: translateY(-3px);
 	transition: ease-in-out 200ms;
-}
+} */
 
 .create-user-text {
 	text-align: center;
 }
 
-.box-create-user {
+/* .box-create-user {
 	margin-right: 20px;
 	border: #191b1a 0.5px solid;
 	width: fit-content;
@@ -107,37 +115,84 @@ table th {
 	right: 0;
 	padding-left: 5px;
 	padding-right: 5px;
-}
+} */
 
 .new-user {
-	text-align: left;
-	justify-items: center;
-	max-width: 300px;
+	width: 800px;
+	background-color: rgb(0, 0, 0, 0.5);
 	margin: auto;
+	-webkit-box-shadow: 7px 8px 10px -3px rgba(0, 0, 0, 0.78);
+	box-shadow: 7px 8px 10px -3px rgba(0, 0, 0, 0.78);
+	height: 390px;
+	margin-top: 50px;
+	margin-bottom: 100px;
 }
-
-.group {
-	margin: 10px;
+form {
 	padding: 10px;
 }
 
+.group {
+	width: 90%;
+	margin: auto;
+}
+
+.group label {
+	margin-left: 25px;
+	margin-top: 30;
+	width: 100px;
+	color: rgb(0, 0, 0);
+	font-size: 23px;
+	font-weight: 700;
+}
+
+.level {
+	margin-left: 25px;
+	margin-top: 30;
+	width: 100px;
+	color: rgb(12, 11, 11);
+	font-size: 23px;
+	font-weight: 700;
+}
+
 .name-email {
-	border: #424242 1px solid;
-	height: 30px;
+	height: 40px;
 	width: 100%;
-	padding-left: 4px;
+	padding: 7px;
 	border-radius: 2px;
-	margin-top: 5px;
+	padding: 0 5px;
+	border-radius: 5px;
+	color: #555;
+	margin: 10px;
 }
 
 .radio {
 	position: relative;
+	padding-right: 70px;
+	margin-left: 25px;
+	margin-top: 15px;
+	color: white;
+	display: inline;
+	left: 20px;
 }
 
-.button {
+button {
 	width: 300px;
 	padding: 10px;
-	margin-top: 10px;
+	display: block;
+	border-radius: 30px;
+	background-color: black;
+	color: white;
+	transition: 200ms ease-in;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+button:hover {
+	background: linear-gradient(
+		90deg,
+		rgb(98, 97, 97) 0%,
+		rgb(169, 145, 145) 100%
+	);
 }
 
 .nav-brand-text-dark {
