@@ -43,7 +43,7 @@ function Form() {
                             <th>Name</th> 
                             <th>Age</th>
                             <th>Email</th>
-                            <th>Action</th>
+                            <th>Level</th>
                             <th>Update / Delete</th>
                         </tr>
                     </thead>
