@@ -34,9 +34,12 @@ function App() {
             </header>
             <div className="container">
 
+                
+
                 <Form/>
 
             </div>
+            <h2>New Student User</h2>
             <div>
             
             </div>
@@ -55,7 +58,7 @@ function App() {
                         <input className ="name-email" onChange={(event)=>{setAge(event.target.value)}} type="number" name='age' placeholder="Age"/>
                     </div>
                     
-                    <label className="level">Level</label>
+                    <label className="level">Coding Level</label>
                         <div class="radio">
                             <input type="radio"  onChange={handleChange} name="status" value="Beginner"/>
                             <label>Beginner</label>
