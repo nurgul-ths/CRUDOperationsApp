@@ -11,16 +11,17 @@ Key Features
 
 Steps for Set Up
 
-1.  git clone https://github.com/nurgul-ths/CRUDOperationsApp.git
+1 . git clone https://github.com/nurgul-ths/CRUDOperationsApp.git
 
-2.  Navigate to server folder in a separate terminal window
-    cd server
+2 . Navigate to server folder in a separate terminal window
+cd server
 
-3.  npm run devStart
+3 . npm run devStart
 
-4.  Navigate to client folder in a separate terminal window
-    cd client
+4 . Navigate to client folder in a separate terminal window
+cd client
 
-5.  npm run start
-    [Photo](photo.png)
-    ![photo](./photo.png)
+5 . npm run start
+
+6 . Image of New User Form
+![photo](./photo.png)
