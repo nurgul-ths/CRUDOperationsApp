@@ -23,3 +23,4 @@ Steps for Set Up
 
 5.  npm run start
     [Photo](photo.png)
+    ![photo](./photo.png)
